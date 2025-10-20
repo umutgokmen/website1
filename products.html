@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="brand-name">My Brand</a>
+            <div class="nav-actions">
+                <a href="#" class="nav-link"><i class="fas fa-shopping-cart"></i> Cart</a>
+                <a href="membership.html" class="nav-link"><i class="fas fa-user"></i> Membership</a>
+                <a href="products.html" class="nav-link"><i class="fas fa-tshirt"></i> Products</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="filter-container">
+        <h2>Filter Products</h2>
+        <div class="filter-controls">
+            <label for="category">Category:</label>
+            <select id="category">
+                <option value="all">All</option>
+                <option value="hats">Hats</option>
+                <option value="sweaters">Sweaters</option>
+                <option value="socks">Socks</option>
+            </select>
+
+            <label for="size">Size:</label>
+            <select id="size">
+                <option value="all">All</option>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+
+            <label for="color">Color:</label>
+            <select id="color">
+                <option value="all">All</option>
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="product-list">
+        <div class="product-item" data-category="hats" data-size="medium" data-color="red">
+            <img src="images/hat.jpeg" alt="Hat">
+            <div class="product-info">
+                <h3>Hat</h3>
+                <p>A stylish red hat.</p>
+                <p class="price">$15.00</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-item" data-category="sweaters" data-size="large" data-color="blue">
+            <img src="images/sweater.jpeg" alt="Sweater">
+            <div class="product-info">
+                <h3>Sweater</h3>
+                <p>A cozy blue sweater.</p>
+                <p class="price">$30.00</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-item" data-category="socks" data-size="small" data-color="green">
+            <img src="images/socks.jpeg" alt="Socks">
+            <div class="product-info">
+                <h3>Socks</h3>
+                <p>A pair of green socks.</p>
+                <p class="price">$10.00</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        <!-- Add more product items here -->
+    </div>
+
+    <script src="js/scripts.js"></script>
+
+</body>
+</html>
